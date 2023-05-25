@@ -9,13 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Zadaca_3 {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class FrmZahtjev : Form {
+        public FrmZahtjev() {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e) {
-
         }
     }
 }
