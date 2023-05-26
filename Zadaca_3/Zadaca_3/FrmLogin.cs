@@ -24,13 +24,17 @@ namespace Zadaca_3 {
             else if (korisnickoIme == "zaposlenik" && lozinka == "123") {
                 MessageBox.Show("Uspješno ste se prijavili!", "Uspješna prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
-                FrmZahtjev frmZahtjev = new FrmZahtjev();   
-                frmZahtjev.ShowDialog();
+                FrmPregledZahtjeva frmPregledZahtjeva = new FrmPregledZahtjeva();   
+                frmPregledZahtjeva.ShowDialog();
                 Close();
             }
             else {
                 MessageBox.Show("Podaci nisu ispravni!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e) {
+
         }
     }
 }

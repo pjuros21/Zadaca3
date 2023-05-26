@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Zadaca_3 {
-    public partial class FrmZahtjev : Form {
-        public FrmZahtjev() {
+    public partial class FrmPregledZahtjeva : Form {
+        public FrmPregledZahtjeva() {
             InitializeComponent();
         }
     }
