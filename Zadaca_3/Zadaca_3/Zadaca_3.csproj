@@ -62,6 +62,14 @@
     <Compile Include="FrmPregledZahtjeva.Designer.cs">
       <DependentUpon>FrmPregledZahtjeva.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPS23_pjuros21DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IPS23_pjuros21DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Menadzer.cs" />
+    <Compile Include="Models\VrstaOdsutnosti.cs" />
+    <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
@@ -79,6 +87,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="IPS23_pjuros21DataSet.xsc">
+      <DependentUpon>IPS23_pjuros21DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IPS23_pjuros21DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IPS23_pjuros21DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IPS23_pjuros21DataSet.xss">
+      <DependentUpon>IPS23_pjuros21DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DBLayer.DB.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,5 +115,6 @@
   <ItemGroup>
     <Content Include="DLLs\DBLayer.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

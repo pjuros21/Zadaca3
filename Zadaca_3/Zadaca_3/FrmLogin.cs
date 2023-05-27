@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DBLayer;
 
 namespace Zadaca_3 {
     public partial class FrmLogin : Form {
