@@ -29,12 +29,15 @@
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.zahtjeviBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPS23_pjuros21DataSet = new Zadaca_3.IPS23_pjuros21DataSet();
+            this.zahtjeviTableAdapter = new Zadaca_3.IPS23_pjuros21DataSetTableAdapters.ZahtjeviTableAdapter();
+            this.dgvZahtjevi = new System.Windows.Forms.DataGridView();
             this.dBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dBBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.zahtjeviTableAdapter = new Zadaca_3.IPS23_pjuros21DataSetTableAdapters.ZahtjeviTableAdapter();
+            this.btnStvoriNoviZahtjev = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zahtjeviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPS23_pjuros21DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -42,9 +45,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 48);
+            this.label1.Location = new System.Drawing.Point(64, 88);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(165, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Povijest zahtjeva";
             // 
@@ -62,6 +66,21 @@
             this.iPS23_pjuros21DataSet.DataSetName = "IPS23_pjuros21DataSet";
             this.iPS23_pjuros21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // zahtjeviTableAdapter
+            // 
+            this.zahtjeviTableAdapter.ClearBeforeFill = true;
+            // 
+            // dgvZahtjevi
+            // 
+            this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvZahtjevi.Location = new System.Drawing.Point(69, 136);
+            this.dgvZahtjevi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvZahtjevi.Name = "dgvZahtjevi";
+            this.dgvZahtjevi.RowHeadersWidth = 62;
+            this.dgvZahtjevi.RowTemplate.Height = 28;
+            this.dgvZahtjevi.Size = new System.Drawing.Size(962, 383);
+            this.dgvZahtjevi.TabIndex = 1;
+            // 
             // dBBindingSource
             // 
             this.dBBindingSource.DataSource = typeof(DBLayer.DB);
@@ -70,17 +89,29 @@
             // 
             this.dBBindingSource1.DataSource = typeof(DBLayer.DB);
             // 
-            // zahtjeviTableAdapter
+            // btnStvoriNoviZahtjev
             // 
-            this.zahtjeviTableAdapter.ClearBeforeFill = true;
+            this.btnStvoriNoviZahtjev.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnStvoriNoviZahtjev.Location = new System.Drawing.Point(839, 571);
+            this.btnStvoriNoviZahtjev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnStvoriNoviZahtjev.Name = "btnStvoriNoviZahtjev";
+            this.btnStvoriNoviZahtjev.Size = new System.Drawing.Size(192, 62);
+            this.btnStvoriNoviZahtjev.TabIndex = 2;
+            this.btnStvoriNoviZahtjev.Text = "Stvori novi zahtjev";
+            this.btnStvoriNoviZahtjev.UseVisualStyleBackColor = true;
             // 
             // FrmPregledZahtjeva
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 735);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1098, 699);
+            this.Controls.Add(this.btnStvoriNoviZahtjev);
+            this.Controls.Add(this.dgvZahtjevi);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmPregledZahtjeva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pregled zahtjeva za odsustvo";
@@ -88,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zahtjeviBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPS23_pjuros21DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBBindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -104,5 +136,7 @@
         private IPS23_pjuros21DataSet iPS23_pjuros21DataSet;
         private System.Windows.Forms.BindingSource zahtjeviBindingSource;
         private IPS23_pjuros21DataSetTableAdapters.ZahtjeviTableAdapter zahtjeviTableAdapter;
+        private System.Windows.Forms.DataGridView dgvZahtjevi;
+        private System.Windows.Forms.Button btnStvoriNoviZahtjev;
     }
 }

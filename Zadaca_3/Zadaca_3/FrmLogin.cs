@@ -22,7 +22,7 @@ namespace Zadaca_3 {
             if (korisnickoIme == "" || lozinka == "") {
                 MessageBox.Show("Niste unijeli sve podatke!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             } 
-            else if (korisnickoIme == "zaposlenik" && lozinka == "123") {
+            else if (korisnickoIme == "z" && lozinka == "123") {
                 MessageBox.Show("Uspješno ste se prijavili!", "Uspješna prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
                 FrmPregledZahtjeva frmPregledZahtjeva = new FrmPregledZahtjeva();   
@@ -32,9 +32,13 @@ namespace Zadaca_3 {
             else {
                 MessageBox.Show("Podaci nisu ispravni!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        } 
+        
+        private void FrmLogin_Load(object sender, EventArgs e) {
+
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e) {
+        private void FrmLogin_Load_1(object sender, EventArgs e) {
 
         }
     }
