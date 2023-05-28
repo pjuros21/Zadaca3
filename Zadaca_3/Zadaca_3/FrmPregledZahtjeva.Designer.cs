@@ -74,11 +74,11 @@
             // 
             this.dgvZahtjevi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZahtjevi.Location = new System.Drawing.Point(69, 136);
-            this.dgvZahtjevi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvZahtjevi.Margin = new System.Windows.Forms.Padding(4);
             this.dgvZahtjevi.Name = "dgvZahtjevi";
             this.dgvZahtjevi.RowHeadersWidth = 62;
             this.dgvZahtjevi.RowTemplate.Height = 28;
-            this.dgvZahtjevi.Size = new System.Drawing.Size(962, 383);
+            this.dgvZahtjevi.Size = new System.Drawing.Size(962, 310);
             this.dgvZahtjevi.TabIndex = 1;
             // 
             // dBBindingSource
@@ -92,13 +92,14 @@
             // btnStvoriNoviZahtjev
             // 
             this.btnStvoriNoviZahtjev.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnStvoriNoviZahtjev.Location = new System.Drawing.Point(839, 571);
+            this.btnStvoriNoviZahtjev.Location = new System.Drawing.Point(839, 537);
             this.btnStvoriNoviZahtjev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStvoriNoviZahtjev.Name = "btnStvoriNoviZahtjev";
             this.btnStvoriNoviZahtjev.Size = new System.Drawing.Size(192, 62);
             this.btnStvoriNoviZahtjev.TabIndex = 2;
             this.btnStvoriNoviZahtjev.Text = "Stvori novi zahtjev";
             this.btnStvoriNoviZahtjev.UseVisualStyleBackColor = true;
+            this.btnStvoriNoviZahtjev.Click += new System.EventHandler(this.btnStvoriNoviZahtjev_Click);
             // 
             // FrmPregledZahtjeva
             // 
@@ -111,10 +112,10 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Neue Haas Grotesk Text Pro", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPregledZahtjeva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pregled zahtjeva za odsustvo";
+            this.Text = "S";
             this.Load += new System.EventHandler(this.FrmPregledZahtjeva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zahtjeviBindingSource)).EndInit();

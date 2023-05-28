@@ -8,5 +8,9 @@ namespace Zadaca_3.Models {
     public class Menadzer {
         public int Id_Menadzera { get; set; }
         public string NazivMenadzera { get; set; }
+
+        public override string ToString() {
+            return NazivMenadzera;
+        }
     }
 }

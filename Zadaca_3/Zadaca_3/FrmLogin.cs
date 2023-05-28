@@ -32,14 +32,7 @@ namespace Zadaca_3 {
             else {
                 MessageBox.Show("Podaci nisu ispravni!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        } 
-        
-        private void FrmLogin_Load(object sender, EventArgs e) {
-
         }
 
-        private void FrmLogin_Load_1(object sender, EventArgs e) {
-
-        }
     }
 }

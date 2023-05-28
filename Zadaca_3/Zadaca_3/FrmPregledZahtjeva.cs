@@ -37,6 +37,9 @@ namespace Zadaca_3 {
 
         }
 
-       
+        private void btnStvoriNoviZahtjev_Click(object sender, EventArgs e) {
+            FrmNoviZahtjev frmNoviZahtjev = new FrmNoviZahtjev();
+            frmNoviZahtjev.ShowDialog();
+        }
     }
 }
